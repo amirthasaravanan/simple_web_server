@@ -82,6 +82,7 @@ content=
 </body>
 </html>
 ```
+```
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
@@ -94,6 +95,7 @@ print("This is my webserver")
 server_address =('',8000)
 httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
+```
 
 # OUTPUT:
 ![alt text](<Screenshot 2024-11-30 223308.png>)
