@@ -23,7 +23,7 @@ Testing the webserver.
 # PROGRAM:
 from http.server import HTTPServer,BaseHTTPRequestHandler
 ```
-content=
+content='''
 <!doctype html>
 <html>
 <head>
@@ -43,13 +43,13 @@ content=
             device name
         </td>
         <td>
-            DESKTOP-MOHHBTU
+            LAPTOP-5JU1LOO5
         </td>
     </tr>
     <tr>
         <td>processor
         </td>
-        <td>13th Gen Intel(R) Core(TM) i5-1335U   1.30 GHz
+        <td>12th Gen Intel(R) Core(TM) i5-1235U   1.30 GHz
         </td>
     <tr>
         <td>Installed RAM
@@ -63,14 +63,14 @@ content=
             Device ID
         </td>
         <td>
-            15EEA3B2-7EF5-4DEC-903D-577382C3C005
+            13CCFA21-805B-4552-B107-ACD99522EF55
         </td>
     </tr>
     <tr>
         <td>
             Product ID
         </td>
-        <td>00342-42709-01062-AAOEM</td>
+        <td>00342-42684-23673-AAOEM</td>
     </tr>
     <tr>
         <td>
@@ -81,8 +81,7 @@ content=
 </table>
 </body>
 </html>
-```
-```
+'''
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
@@ -95,9 +94,10 @@ print("This is my webserver")
 server_address =('',8000)
 httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
-```
 
+```
 # OUTPUT:
 ![alt text](<Screenshot 2024-12-07 224154.png>)
+![alt text](<Screenshot 2024-12-07 231822.png>)
 # RESULT:
 The program for implementing simple webserver is executed successfully.
