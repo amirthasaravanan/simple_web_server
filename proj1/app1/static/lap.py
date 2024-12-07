@@ -1,6 +1,6 @@
 from http.server import HTTPServer,BaseHTTPRequestHandler
-'''
-content=
+
+content='''
 <!doctype html>
 <html>
 <head>
@@ -26,7 +26,7 @@ content=
     <tr>
         <td>processor
         </td>
-        <td>13 Gen Intel(R) Core(TM) i5-335   1.30 GHz
+        <td>13th Gen Intel(R) Core(TM) i5-1335U   1.30 GHz
         </td>
     <tr>
         <td>Installed RAM
@@ -40,14 +40,14 @@ content=
             Device ID
         </td>
         <td>
-           " 15EEA3B2-7EF5-4DEC-903D-577382C3C005"
+            15EEA3B2-7EF5-4DEC-903D-577382C3C005
         </td>
     </tr>
     <tr>
         <td>
             Product ID
         </td>
-        <td>00-42709-0-AAOEM</td>
+        <td>00342-42709-01062-AAOEM</td>
     </tr>
     <tr>
         <td>
